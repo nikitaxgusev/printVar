@@ -1,8 +1,20 @@
 {
   "name": "printVar",
   "displayName": "printVar",
-  "description": "",
+  "description": "A Visual Studio Code extension for printing selected variables with std::cout in C++.",
+  "keywords": [
+    "print",
+    "cout",
+    "C++",
+    "variables"
+  ],
   "version": "0.0.1",
+  "publisher": "nikitaxgusev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nikitaxgusev/printVar.git"
+  },
+  "license": "MIT",
   "engines": {
     "vscode": "^1.84.0"
   },
@@ -48,6 +60,6 @@
     "glob": "^10.3.10",
     "mocha": "^10.2.0",
     "sinon": "^17.0.1",
-    "typescript": "^5.2.2"
+    "typescript": "^5.3.2"
   }
 }
