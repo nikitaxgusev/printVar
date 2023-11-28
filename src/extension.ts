@@ -14,9 +14,11 @@ export function activate(context: vscode.ExtensionContext) {
 
             // Get the line number of the selected text
             const lineNumber = selection.start.line;
+            const line = editor.document.lineAt(lineNumber);
+            const leadingWhitespace = line.text.match(/^\s*/)?.[0] || '';
 
-            // Generate the output
-            const output = `std::cout << "${selectedText}" << " : " << ${selectedText} << std::endl;`;
+            // Generate the output with the same indentation
+            const output = `${leadingWhitespace}std::cout << "${selectedText}" << " : " << ${selectedText} << std::endl;`;
 
             // Insert the output on a new line after the line of the selected text
             editor.edit(editBuilder => {
