@@ -5,7 +5,7 @@ import * as myExtension from '../../extension';
 suite('Extension Test Suite', () => {
     vscode.window.showInformationMessage('Start all tests.');
 
-    test('Test - int`', async () => {
+    test('Test - print int', async () => {
         // Create a new untitled document with the desired content
         const document = await vscode.workspace.openTextDocument({ content: 'int p = 124;' });
         const editor = await vscode.window.showTextDocument(document);
