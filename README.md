@@ -13,6 +13,7 @@ This extension for Visual Studio Code allows you to print a selected variable wi
 1. Open a C++ file.
 2. Select a variable in the code.
 3. Execute the "PrintVar" command (`Ctrl + Shift + P`, type "PrintVar", and select the command).
+   or ("key": "ctrl+shift+z", "mac": "cmd+shift+z")
 4. The extension will insert a `std::cout` statement printing the selected variable and its value.
 
 ## Extension Settings
@@ -30,3 +31,8 @@ See [CHANGELOG.md](CHANGELOG.md).
 ## License
 
 This extension is licensed under the [MIT License](LICENSE).
+
+## Usage for dev
+
+npm run compile
+npm test
